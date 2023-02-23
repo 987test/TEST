@@ -7,5 +7,5 @@ String query = "SELECT secret FROM Users WHERE (username = '" + username + "' AN
 // ... OR ...
 // Insecurely format the query string using user defined data 
 String query = String.format("SELECT secret FROM Users WHERE (username = '%s' AND NOT role = 'admin')", username);
-// Execute query and return the results
+// Execute query and return the results rwar
 ResultSet result = statement.executeQuery(query);
